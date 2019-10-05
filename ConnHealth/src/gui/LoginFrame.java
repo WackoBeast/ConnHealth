@@ -5,6 +5,10 @@
  */
 package gui;
 
+import java.awt.Color;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
 import javax.swing.BorderFactory;
 
 /**
@@ -23,6 +27,36 @@ public class LoginFrame extends javax.swing.JFrame {
         
         loginUsernameField.setBorder(BorderFactory.createCompoundBorder(loginUsernameField.getBorder(), BorderFactory.createEmptyBorder(0,11,0,0)));
         loginPasswordField.setBorder(BorderFactory.createCompoundBorder(loginUsernameField.getBorder(), BorderFactory.createEmptyBorder(0,4,0,0)));
+        loginButtontxt.addMouseListener(new MouseListener() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                //Mouse Clicked
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e) {
+               //mouse pressed
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                //mouse released
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                loginButtontxt.setOpaque(true);
+                loginButtontxt.setForeground(new Color(255,255,255));
+                
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                 loginButtontxt.setOpaque(false);
+                 loginButtontxt.setForeground(new Color(254,254,254));
+                
+            }
+        });
     }
 
     /**
@@ -37,9 +71,10 @@ public class LoginFrame extends javax.swing.JFrame {
         kGradientPanel1 = new keeptoo.KGradientPanel();
         loginPageTitletxt = new javax.swing.JLabel();
         loginUsernametxt = new javax.swing.JLabel();
-        loginPasswordtxt = new javax.swing.JLabel();
         loginUsernameField = new javax.swing.JTextField();
+        loginPasswordtxt = new javax.swing.JLabel();
         loginPasswordField = new javax.swing.JPasswordField();
+        loginButtontxt = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(950, 700));
@@ -58,10 +93,6 @@ public class LoginFrame extends javax.swing.JFrame {
         loginUsernametxt.setForeground(new java.awt.Color(255, 255, 255));
         loginUsernametxt.setText("Username:");
 
-        loginPasswordtxt.setFont(new java.awt.Font("Segoe UI Semilight", 0, 24)); // NOI18N
-        loginPasswordtxt.setForeground(new java.awt.Color(255, 255, 255));
-        loginPasswordtxt.setText("Password:");
-
         loginUsernameField.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.background"));
         loginUsernameField.setFont(new java.awt.Font("Segoe UI Symbol", 0, 24)); // NOI18N
         loginUsernameField.setForeground(new java.awt.Color(255, 255, 255));
@@ -75,6 +106,10 @@ public class LoginFrame extends javax.swing.JFrame {
             }
         });
 
+        loginPasswordtxt.setFont(new java.awt.Font("Segoe UI Semilight", 0, 24)); // NOI18N
+        loginPasswordtxt.setForeground(new java.awt.Color(255, 255, 255));
+        loginPasswordtxt.setText("Password:");
+
         loginPasswordField.setFont(new java.awt.Font("Segoe UI Semibold", 1, 24)); // NOI18N
         loginPasswordField.setForeground(new java.awt.Color(255, 255, 255));
         loginPasswordField.setBorder(null);
@@ -85,50 +120,69 @@ public class LoginFrame extends javax.swing.JFrame {
         loginPasswordField.setOpaque(false);
         loginPasswordField.setPreferredSize(new java.awt.Dimension(147, 32));
 
+        loginButtontxt.setBackground(new java.awt.Color(46, 109, 148));
+        loginButtontxt.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 24)); // NOI18N
+        loginButtontxt.setForeground(new java.awt.Color(254, 254, 254));
+        loginButtontxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        loginButtontxt.setText("Proceed");
+
         javax.swing.GroupLayout kGradientPanel1Layout = new javax.swing.GroupLayout(kGradientPanel1);
         kGradientPanel1.setLayout(kGradientPanel1Layout);
         kGradientPanel1Layout.setHorizontalGroup(
             kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(loginPageTitletxt, javax.swing.GroupLayout.PREFERRED_SIZE, 437, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(244, 244, 244))
             .addGroup(kGradientPanel1Layout.createSequentialGroup()
                 .addGap(175, 175, 175)
                 .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(loginUsernametxt)
                     .addComponent(loginPasswordtxt))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(loginUsernameField)
                     .addComponent(loginPasswordField, javax.swing.GroupLayout.DEFAULT_SIZE, 277, Short.MAX_VALUE))
                 .addGap(372, 372, 372))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
+                        .addComponent(loginPageTitletxt, javax.swing.GroupLayout.PREFERRED_SIZE, 437, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(271, 271, 271))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
+                        .addComponent(loginButtontxt, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(47, 47, 47))))
         );
         kGradientPanel1Layout.setVerticalGroup(
             kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kGradientPanel1Layout.createSequentialGroup()
-                .addGap(51, 51, 51)
+                .addGap(76, 76, 76)
                 .addComponent(loginPageTitletxt, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(122, 122, 122)
                 .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(loginUsernametxt)
                     .addComponent(loginUsernameField, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(loginPasswordtxt)
                     .addComponent(loginPasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(294, 294, 294))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 211, Short.MAX_VALUE)
+                .addComponent(loginButtontxt, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(47, 47, 47))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(kGradientPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(kGradientPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(kGradientPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(kGradientPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
@@ -140,6 +194,7 @@ public class LoginFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private keeptoo.KGradientPanel kGradientPanel1;
+    private javax.swing.JLabel loginButtontxt;
     private javax.swing.JLabel loginPageTitletxt;
     private javax.swing.JPasswordField loginPasswordField;
     private javax.swing.JLabel loginPasswordtxt;
