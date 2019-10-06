@@ -5,6 +5,9 @@
  */
 package gui;
 
+import java.awt.Color;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import javax.swing.BorderFactory;
 import javax.swing.SwingConstants;
 
@@ -34,6 +37,7 @@ public class MainFrame extends javax.swing.JFrame {
     public void prepareComponents(){
         setupAlignment();
         setupPadding();
+        setupMenuFunctionality();      
     }  
     
     public void setupAlignment(){
@@ -44,17 +48,242 @@ public class MainFrame extends javax.swing.JFrame {
     }
     
     public void setupPadding(){
-        mainFrameEmplyeestxt.setBorder(BorderFactory.createCompoundBorder(mainFrameEmplyeestxt.getBorder(), BorderFactory.createEmptyBorder(0,25,0,0)));
+        mainFrameEmployeestxt.setBorder(BorderFactory.createCompoundBorder(mainFrameEmployeestxt.getBorder(), BorderFactory.createEmptyBorder(0,25,0,0)));
         mainFrameInvoicestxt.setBorder(BorderFactory.createCompoundBorder(mainFrameInvoicestxt.getBorder(), BorderFactory.createEmptyBorder(0,25,0,0)));
         mainFrameAppointmentstxt.setBorder(BorderFactory.createCompoundBorder(mainFrameAppointmentstxt.getBorder(), BorderFactory.createEmptyBorder(0,25,0,0)));
         mainFrameParkingtxt.setBorder(BorderFactory.createCompoundBorder(mainFrameParkingtxt.getBorder(), BorderFactory.createEmptyBorder(0,25,0,0)));
         mainFramePatientstxt.setBorder(BorderFactory.createCompoundBorder(mainFramePatientstxt.getBorder(), BorderFactory.createEmptyBorder(0,25,0,0)));
         mainFramePharmacytxt.setBorder(BorderFactory.createCompoundBorder(mainFramePharmacytxt.getBorder(), BorderFactory.createEmptyBorder(0,25,0,0)));
-        mainFrameSettingstxt.setBorder(BorderFactory.createCompoundBorder(mainFrameSettingstxt.getBorder(), BorderFactory.createEmptyBorder(0,25,0,0)));
-        
-        
+        mainFrameSettingstxt.setBorder(BorderFactory.createCompoundBorder(mainFrameSettingstxt.getBorder(), BorderFactory.createEmptyBorder(0,25,0,0)));   
     }
     
+    public void setupMenuFunctionality(){
+        setupEmployeesFunctionality();
+        setupInvoicesFunctionality();
+        setupAppointmentsFunctionality();
+        setupParkingFuntionality();
+        setupPatientFuntionality();
+        setupPharmacyFunctionality();
+        setupSettingsFunctionality();
+    }
+    
+    public void setupEmployeesFunctionality(){
+        mainFrameEmployeestxt.addMouseListener(new MouseListener() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e) {
+                
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                mainFrameEmployeestxt.setOpaque(true);
+                mainFrameEmployeestxt.setForeground(new Color(255,255,255));
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                mainFrameEmployeestxt.setOpaque(false);
+                mainFrameEmployeestxt.setForeground(new Color(254,254,254));
+            }
+        });
+    }
+    
+    public void setupInvoicesFunctionality(){
+        mainFrameInvoicestxt.addMouseListener(new MouseListener() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+               
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e) {
+                
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                mainFrameInvoicestxt.setOpaque(true);
+                mainFrameInvoicestxt.setForeground(new Color(255,255,255));
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                mainFrameInvoicestxt.setOpaque(false);
+                mainFrameInvoicestxt.setForeground(new Color(254,254,254));
+            }
+        });
+    }
+    
+    public void setupAppointmentsFunctionality(){
+        mainFrameAppointmentstxt.addMouseListener(new MouseListener() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e) {
+                
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                mainFrameAppointmentstxt.setOpaque(true);
+                mainFrameAppointmentstxt.setForeground(new Color(255,255,255));
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                mainFrameAppointmentstxt.setOpaque(false);
+                mainFrameAppointmentstxt.setForeground(new Color(254,254,254));
+            }
+        });
+    }
+    
+    public void setupParkingFuntionality(){
+        mainFrameParkingtxt.addMouseListener(new MouseListener() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e) {
+               
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                mainFrameParkingtxt.setOpaque(true);
+                mainFrameParkingtxt.setForeground(new Color(255,255,255));
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                mainFrameParkingtxt.setOpaque(false);
+                mainFrameParkingtxt.setForeground(new Color(254,254,254));
+            }
+        });
+    }
+    
+    public void setupPatientFuntionality(){
+        mainFramePatientstxt.addMouseListener(new MouseListener() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e) {
+                
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                mainFramePatientstxt.setOpaque(true);
+                mainFramePatientstxt.setForeground(new Color(255,255,255));
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                mainFramePatientstxt.setOpaque(false);
+                mainFramePatientstxt.setForeground(new Color(254,254,254));
+            }
+        });
+    } 
+    
+    public void setupPharmacyFunctionality(){
+        mainFramePharmacytxt.addMouseListener(new MouseListener() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e) {
+                
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                mainFramePharmacytxt.setOpaque(true);
+                mainFramePharmacytxt.setForeground(new Color(255,255,255));
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                mainFramePharmacytxt.setOpaque(false);
+                mainFramePharmacytxt.setForeground(new Color(254,254,254));
+            }
+        });
+    }
+    
+    public void setupSettingsFunctionality(){
+        mainFrameSettingstxt.addMouseListener(new MouseListener() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e) {
+                
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+               
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                mainFrameSettingstxt.setOpaque(true);
+                mainFrameSettingstxt.setForeground(new Color(255,255,255));
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                mainFrameSettingstxt.setOpaque(false);
+                mainFrameSettingstxt.setForeground(new Color(254,254,254));              
+            }
+        });
+    }    
+     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -64,7 +293,7 @@ public class MainFrame extends javax.swing.JFrame {
         mainFrameWelcometxt = new javax.swing.JLabel();
         mainFrameUpperseparator = new javax.swing.JSeparator();
         mainFrameUsernametxt = new javax.swing.JLabel();
-        mainFrameEmplyeestxt = new javax.swing.JLabel();
+        mainFrameEmployeestxt = new javax.swing.JLabel();
         mainFramePatientstxt = new javax.swing.JLabel();
         mainFrameAppointmentstxt = new javax.swing.JLabel();
         mainFrameInvoicestxt = new javax.swing.JLabel();
@@ -94,29 +323,35 @@ public class MainFrame extends javax.swing.JFrame {
         mainFrameUsernametxt.setText("Avenger01");
         mainFrameUsernametxt.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
 
-        mainFrameEmplyeestxt.setFont(new java.awt.Font("Segoe UI Semilight", 0, 18)); // NOI18N
-        mainFrameEmplyeestxt.setForeground(new java.awt.Color(255, 255, 255));
-        mainFrameEmplyeestxt.setText("Employees");
+        mainFrameEmployeestxt.setBackground(new java.awt.Color(0, 0, 153));
+        mainFrameEmployeestxt.setFont(new java.awt.Font("Segoe UI Semilight", 0, 18)); // NOI18N
+        mainFrameEmployeestxt.setForeground(new java.awt.Color(255, 255, 255));
+        mainFrameEmployeestxt.setText("Employees");
 
+        mainFramePatientstxt.setBackground(new java.awt.Color(0, 0, 153));
         mainFramePatientstxt.setFont(new java.awt.Font("Segoe UI Semilight", 0, 18)); // NOI18N
         mainFramePatientstxt.setForeground(new java.awt.Color(255, 255, 255));
         mainFramePatientstxt.setText("Patients");
         mainFramePatientstxt.setPreferredSize(new java.awt.Dimension(81, 25));
 
+        mainFrameAppointmentstxt.setBackground(new java.awt.Color(0, 0, 153));
         mainFrameAppointmentstxt.setFont(new java.awt.Font("Segoe UI Semilight", 0, 18)); // NOI18N
         mainFrameAppointmentstxt.setForeground(new java.awt.Color(255, 255, 255));
         mainFrameAppointmentstxt.setText("Appointments");
         mainFrameAppointmentstxt.setPreferredSize(new java.awt.Dimension(81, 25));
 
+        mainFrameInvoicestxt.setBackground(new java.awt.Color(0, 0, 153));
         mainFrameInvoicestxt.setFont(new java.awt.Font("Segoe UI Semilight", 0, 18)); // NOI18N
         mainFrameInvoicestxt.setForeground(new java.awt.Color(255, 255, 255));
         mainFrameInvoicestxt.setText("Invoices");
         mainFrameInvoicestxt.setPreferredSize(new java.awt.Dimension(81, 25));
 
+        mainFramePharmacytxt.setBackground(new java.awt.Color(0, 0, 153));
         mainFramePharmacytxt.setFont(new java.awt.Font("Segoe UI Semilight", 0, 18)); // NOI18N
         mainFramePharmacytxt.setForeground(new java.awt.Color(255, 255, 255));
         mainFramePharmacytxt.setText("Pharmacy");
 
+        mainFrameParkingtxt.setBackground(new java.awt.Color(0, 0, 153));
         mainFrameParkingtxt.setFont(new java.awt.Font("Segoe UI Semilight", 0, 18)); // NOI18N
         mainFrameParkingtxt.setForeground(new java.awt.Color(255, 255, 255));
         mainFrameParkingtxt.setText("Parking");
@@ -125,6 +360,7 @@ public class MainFrame extends javax.swing.JFrame {
         mainFrameBottomseparator.setMinimumSize(new java.awt.Dimension(50, 1));
         mainFrameBottomseparator.setPreferredSize(new java.awt.Dimension(0, 1));
 
+        mainFrameSettingstxt.setBackground(new java.awt.Color(0, 0, 153));
         mainFrameSettingstxt.setFont(new java.awt.Font("Segoe UI Semilight", 0, 22)); // NOI18N
         mainFrameSettingstxt.setForeground(new java.awt.Color(255, 255, 255));
         mainFrameSettingstxt.setText("Settings");
@@ -144,7 +380,7 @@ public class MainFrame extends javax.swing.JFrame {
                     .addComponent(mainFrameBottomseparator, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(mainFrameUpperseparator, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(mainFrameGradientMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(mainFrameEmplyeestxt, javax.swing.GroupLayout.DEFAULT_SIZE, 197, Short.MAX_VALUE)
+                        .addComponent(mainFrameEmployeestxt, javax.swing.GroupLayout.DEFAULT_SIZE, 197, Short.MAX_VALUE)
                         .addComponent(mainFrameAppointmentstxt, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(mainFramePatientstxt, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(mainFrameInvoicestxt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
@@ -161,7 +397,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addGap(34, 34, 34)
                 .addComponent(mainFrameUpperseparator, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(41, 41, 41)
-                .addComponent(mainFrameEmplyeestxt, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(mainFrameEmployeestxt, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28)
                 .addComponent(mainFramePatientstxt, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(31, 31, 31)
@@ -217,7 +453,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel mainFrameAppointmentstxt;
     private javax.swing.JPanel mainFrameBackground;
     private javax.swing.JSeparator mainFrameBottomseparator;
-    private javax.swing.JLabel mainFrameEmplyeestxt;
+    private javax.swing.JLabel mainFrameEmployeestxt;
     private keeptoo.KGradientPanel mainFrameGradientMenu;
     private javax.swing.JLabel mainFrameInvoicestxt;
     private javax.swing.JLabel mainFrameParkingtxt;
