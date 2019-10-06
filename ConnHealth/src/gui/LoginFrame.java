@@ -29,6 +29,8 @@ public class LoginFrame extends javax.swing.JFrame {
         
         loginUsernameField.setBorder(BorderFactory.createCompoundBorder(loginUsernameField.getBorder(), BorderFactory.createEmptyBorder(0,11,0,0)));
         loginPasswordField.setBorder(BorderFactory.createCompoundBorder(loginUsernameField.getBorder(), BorderFactory.createEmptyBorder(0,4,0,0)));
+        
+        
         loginButtontxt.addMouseListener(new MouseListener() {
             @Override
             public void mouseClicked(MouseEvent e) {
