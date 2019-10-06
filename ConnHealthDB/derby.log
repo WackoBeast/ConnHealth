@@ -1,0 +1,20 @@
+Sun Oct 06 09:00:05 EEST 2019 : Apache Derby Network Server - 10.10.2.0 - (1582446) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Sun Oct 06 09:00:06 EEST 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-016d-9fa7-5138-00003dbc669a 
+on database directory C:\Users\vladv\OneDrive\Desktop\ConnHealth\ConnHealthDB\ConnHealthDB with class loader sun.misc.Launcher$AppClassLoader@1d44bcfa 
+Loaded from file:/D:/GlassFish/glassfish-4.1.1/javadb/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_202-b08
+user.dir=D:\GlassFish\glassfish-4.1.1\javadb
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\vladv\OneDrive\Desktop\ConnHealth\ConnHealthDB
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Sun Oct 06 20:54:26 EEST 2019: Shutting down Derby engine
+----------------------------------------------------------------
+Sun Oct 06 20:54:27 EEST 2019:
+Shutting down instance a816c00e-016d-9fa7-5138-00003dbc669a on database directory C:\Users\vladv\OneDrive\Desktop\ConnHealth\ConnHealthDB\ConnHealthDB with class loader sun.misc.Launcher$AppClassLoader@1d44bcfa 
+----------------------------------------------------------------
