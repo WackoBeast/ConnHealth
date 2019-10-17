@@ -87,13 +87,15 @@ public class MainFrame extends javax.swing.JFrame {
             @Override
             public void mouseEntered(MouseEvent e) {
                 mainFrameEmployeestxt.setOpaque(true);
-                mainFrameEmployeestxt.setForeground(new Color(255,255,255));
+                mainFrameEmployeestxt.setForeground(new Color(49,71,85));
+                
+                
             }
 
             @Override
             public void mouseExited(MouseEvent e) {
                 mainFrameEmployeestxt.setOpaque(false);
-                mainFrameEmployeestxt.setForeground(new Color(254,254,254));
+                mainFrameEmployeestxt.setForeground(new Color(255,255,255));
             }
         });
     }
@@ -118,7 +120,7 @@ public class MainFrame extends javax.swing.JFrame {
             @Override
             public void mouseEntered(MouseEvent e) {
                 mainFrameInvoicestxt.setOpaque(true);
-                mainFrameInvoicestxt.setForeground(new Color(255,255,255));
+                mainFrameInvoicestxt.setForeground(new Color(49,71,85));
             }
 
             @Override
@@ -149,7 +151,7 @@ public class MainFrame extends javax.swing.JFrame {
             @Override
             public void mouseEntered(MouseEvent e) {
                 mainFrameAppointmentstxt.setOpaque(true);
-                mainFrameAppointmentstxt.setForeground(new Color(255,255,255));
+                mainFrameAppointmentstxt.setForeground(new Color(49,71,85));
             }
 
             @Override
@@ -180,7 +182,7 @@ public class MainFrame extends javax.swing.JFrame {
             @Override
             public void mouseEntered(MouseEvent e) {
                 mainFrameParkingtxt.setOpaque(true);
-                mainFrameParkingtxt.setForeground(new Color(255,255,255));
+                mainFrameParkingtxt.setForeground(new Color(49,71,85));
             }
 
             @Override
@@ -211,7 +213,7 @@ public class MainFrame extends javax.swing.JFrame {
             @Override
             public void mouseEntered(MouseEvent e) {
                 mainFramePatientstxt.setOpaque(true);
-                mainFramePatientstxt.setForeground(new Color(255,255,255));
+                mainFramePatientstxt.setForeground(new Color(49,71,85));
             }
 
             @Override
@@ -242,7 +244,7 @@ public class MainFrame extends javax.swing.JFrame {
             @Override
             public void mouseEntered(MouseEvent e) {
                 mainFramePharmacytxt.setOpaque(true);
-                mainFramePharmacytxt.setForeground(new Color(255,255,255));
+                mainFramePharmacytxt.setForeground(new Color(49,71,85));
             }
 
             @Override
@@ -273,7 +275,7 @@ public class MainFrame extends javax.swing.JFrame {
             @Override
             public void mouseEntered(MouseEvent e) {
                 mainFrameSettingstxt.setOpaque(true);
-                mainFrameSettingstxt.setForeground(new Color(255,255,255));
+                mainFrameSettingstxt.setForeground(new Color(49,71,85));
             }
 
             @Override
@@ -323,35 +325,35 @@ public class MainFrame extends javax.swing.JFrame {
         mainFrameUsernametxt.setText("Avenger01");
         mainFrameUsernametxt.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
 
-        mainFrameEmployeestxt.setBackground(new java.awt.Color(0, 0, 153));
+        mainFrameEmployeestxt.setBackground(new java.awt.Color(227, 240, 250));
         mainFrameEmployeestxt.setFont(new java.awt.Font("Segoe UI Semilight", 0, 18)); // NOI18N
         mainFrameEmployeestxt.setForeground(new java.awt.Color(255, 255, 255));
         mainFrameEmployeestxt.setText("Employees");
 
-        mainFramePatientstxt.setBackground(new java.awt.Color(0, 0, 153));
+        mainFramePatientstxt.setBackground(new java.awt.Color(227, 240, 250));
         mainFramePatientstxt.setFont(new java.awt.Font("Segoe UI Semilight", 0, 18)); // NOI18N
         mainFramePatientstxt.setForeground(new java.awt.Color(255, 255, 255));
         mainFramePatientstxt.setText("Patients");
         mainFramePatientstxt.setPreferredSize(new java.awt.Dimension(81, 25));
 
-        mainFrameAppointmentstxt.setBackground(new java.awt.Color(0, 0, 153));
+        mainFrameAppointmentstxt.setBackground(new java.awt.Color(227, 240, 250));
         mainFrameAppointmentstxt.setFont(new java.awt.Font("Segoe UI Semilight", 0, 18)); // NOI18N
         mainFrameAppointmentstxt.setForeground(new java.awt.Color(255, 255, 255));
         mainFrameAppointmentstxt.setText("Appointments");
         mainFrameAppointmentstxt.setPreferredSize(new java.awt.Dimension(81, 25));
 
-        mainFrameInvoicestxt.setBackground(new java.awt.Color(0, 0, 153));
+        mainFrameInvoicestxt.setBackground(new java.awt.Color(227, 240, 250));
         mainFrameInvoicestxt.setFont(new java.awt.Font("Segoe UI Semilight", 0, 18)); // NOI18N
         mainFrameInvoicestxt.setForeground(new java.awt.Color(255, 255, 255));
         mainFrameInvoicestxt.setText("Invoices");
         mainFrameInvoicestxt.setPreferredSize(new java.awt.Dimension(81, 25));
 
-        mainFramePharmacytxt.setBackground(new java.awt.Color(0, 0, 153));
+        mainFramePharmacytxt.setBackground(new java.awt.Color(227, 240, 250));
         mainFramePharmacytxt.setFont(new java.awt.Font("Segoe UI Semilight", 0, 18)); // NOI18N
         mainFramePharmacytxt.setForeground(new java.awt.Color(255, 255, 255));
         mainFramePharmacytxt.setText("Pharmacy");
 
-        mainFrameParkingtxt.setBackground(new java.awt.Color(0, 0, 153));
+        mainFrameParkingtxt.setBackground(new java.awt.Color(227, 240, 250));
         mainFrameParkingtxt.setFont(new java.awt.Font("Segoe UI Semilight", 0, 18)); // NOI18N
         mainFrameParkingtxt.setForeground(new java.awt.Color(255, 255, 255));
         mainFrameParkingtxt.setText("Parking");
@@ -360,7 +362,7 @@ public class MainFrame extends javax.swing.JFrame {
         mainFrameBottomseparator.setMinimumSize(new java.awt.Dimension(50, 1));
         mainFrameBottomseparator.setPreferredSize(new java.awt.Dimension(0, 1));
 
-        mainFrameSettingstxt.setBackground(new java.awt.Color(0, 0, 153));
+        mainFrameSettingstxt.setBackground(new java.awt.Color(227, 240, 250));
         mainFrameSettingstxt.setFont(new java.awt.Font("Segoe UI Semilight", 0, 22)); // NOI18N
         mainFrameSettingstxt.setForeground(new java.awt.Color(255, 255, 255));
         mainFrameSettingstxt.setText("Settings");
