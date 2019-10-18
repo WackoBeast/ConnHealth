@@ -6,6 +6,8 @@
 package entities;
 
 import java.io.Serializable;
+import javax.persistence.Basic;
+import javax.persistence.Column;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.NamedQueries;
@@ -25,6 +27,9 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "Masters.findByUsername", query = "SELECT m FROM Masters m WHERE m.mastersPK.username = :username"),
     @NamedQuery(name = "Masters.findByCode", query = "SELECT m FROM Masters m WHERE m.mastersPK.code = :code")})
 public class Masters implements Serializable {
+    @Basic(optional = false)
+    @Column(name = "style")
+    private String style;
 
     private static final long serialVersionUID = 1L;
     @EmbeddedId
@@ -72,6 +77,14 @@ public class Masters implements Serializable {
     @Override
     public String toString() {
         return "entities.Masters[ mastersPK=" + mastersPK + " ]";
+    }
+
+    public String getStyle() {
+        return style;
+    }
+
+    public void setStyle(String style) {
+        this.style = style;
     }
     
 }

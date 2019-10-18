@@ -3,12 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/vladv/OneDrive/Desktop/ConnHealth/ConnHealth/src/gui/LoginFrame.java</file>
-            <file>file:/C:/Users/vladv/OneDrive/Desktop/ConnHealth/ConnHealth/src/db/DBAuthentication.java</file>
-            <file>file:/C:/Users/vladv/OneDrive/Desktop/ConnHealth/ConnHealth/src/main/Main.java</file>
-            <file>file:/C:/Users/vladv/OneDrive/Desktop/ConnHealth/ConnHealth/src/META-INF/persistence.xml</file>
-            <file>file:/C:/Users/vladv/OneDrive/Desktop/ConnHealth/ConnHealth/src/gui/MainFrame.java</file>
-            <file>file:/C:/Users/vladv/OneDrive/Desktop/ConnHealth/ConnHealth/src/db/DBConnection.java</file>
+            <file>file:/C:/ConnHealth/ConnHealth/src/main/Main.java</file>
+            <file>file:/C:/ConnHealth/ConnHealth/src/META-INF/persistence.xml</file>
+            <file>file:/C:/ConnHealth/ConnHealth/src/gui/LoginFrame.java</file>
         </group>
     </open-files>
 </project-private>

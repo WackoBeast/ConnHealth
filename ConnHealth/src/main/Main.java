@@ -17,8 +17,8 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       gui.MainFrame mainFrame = new gui.MainFrame();
-       //gui.LoginFrame loginFrame = new LoginFrame();
+       //gui.MainFrame mainFrame = new gui.MainFrame();
+       gui.LoginFrame loginFrame = new LoginFrame();
     }
     
 }
